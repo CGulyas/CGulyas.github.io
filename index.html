@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		<title>Christian Gulyas</title>
+	</head>
+
+  <body>
+		<div id='about'>
+      <div id='name'>
+        <h2>ABOUT</h2>
+				<div id="bio">
+					<p>Software developer specializing in iOS And Web Development</p>
+				</div>
+				<a onclick="toggle_visibility('main')";>Back</a>
+      	<div id='contact'>
+					<p id='email'>EMAIL</p>
+					<p>CSBGuly@gmail.com</p>
+      	</div>
+      </div>
+    </div>
+    <div id='main'>
+      <div id='name'>
+        <h2>CHRISTIAN GULYAS</h2>
+        <p>Software Developer</p>
+				<a onclick="toggle_visibility('main')";>About/Contact</a>
+      	<div id='links'>
+        	<p>
+          	<a href='/resume'>Resume</a>
+          	<a href='/tourscores'>TourScores</a>
+        	</p>
+      	</div>
+      </div>
+    </div>
+
+		<script type="text/javascript">
+			function toggle_visibility(id) {
+				var elementID = document.getElementById(id);
+				if(elementID.style.display !== 'none') {
+					elementID.style.display = 'none';
+				}
+				else {
+					elementID.style.display = 'block';
+				}
+			}
+		</script>
+
+  </body>
+<html>

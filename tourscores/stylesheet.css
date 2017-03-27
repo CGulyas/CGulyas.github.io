@@ -1,0 +1,180 @@
+h1
+{
+	text-align: center;
+	font-family: Roboto, sans-serif;
+	color: rgb(240,240,160);
+	font-weight: 300;
+}
+p
+{
+	font-family: Roboto, sans-serif;
+	text-align: center;
+	color: rgb(240,240,160);
+}
+body
+{
+	background-color: rgb(50, 50, 50);
+}
+#plus
+{
+	text-align: center;
+	/*box-sizing: content-box;*/
+	display: inline;
+}
+
+#image
+{
+	margin: auto;
+	padding-top: 100px;
+	height: 180px;
+	width: 180px;
+}
+
+#image img
+{
+	height: 180px;
+	width: 180px;
+}
+summary::-webkit-details-marker
+{
+  	display: none
+}
+summary:focus
+{
+	outline-style: none;
+}
+/*summary:after
+{  
+  	content: "Email";
+  	text-decoration: underline;
+  	font-family: Roboto, sans-serif;
+  	color: rgb(240,240,160);
+  	float: middle; 
+  	font-size: 0.9em; 
+  	top: 50%;
+  	left: 50%; 
+  	padding: 0; 
+  	text-align: center; 
+  	width: 20px;
+  	cursor: pointer;
+}*/
+summary:after
+{
+	background-image: url("GolfManTop.svg");
+	background-size: 90% 90%;
+	background-repeat: no-repeat;
+    background-position: 15px 10px;
+	width: 100px;
+	max-height: 100px;
+	content: "Email";
+	padding-top: 90px;
+	text-decoration: overline;
+	font-family: Roboto, sans-serif;
+ 	color: rgb(240,240,160);
+	display: block;
+	margin: auto;
+}
+details[open] summary:after
+{
+	content: "Hide";
+
+	background-image: url("GolfManBottom.svg");
+	background-size: 90% 90%;
+	background-repeat: no-repeat;
+	width: 100px;
+	max-height: 100px;
+	padding-top: 90px;
+	display: inline-block;
+	margin: auto;
+}
+
+/*iPhone*/
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+  	h1
+  	{
+  		font-size: 75px;
+  	}
+  	p
+  	{
+  		font-size: 50px;
+  	}
+  	#image
+  	{
+  		height: 400px;
+  		width: 400px;
+  		padding-top: 200px;
+  	}
+  	#image img
+  	{
+  		height: 400px;
+  		width: 400px;
+  	}
+  	summary:after
+  	{
+  		font-size: 40px;
+  		background-position: 25px 21px;
+  		padding-top: 190px;
+  		width: 200px;
+  		max-height: 200px;
+  	}
+  	details[open] summary:after
+  	{
+  		background-position: 25px 21px;
+  		padding-top: 190px;
+  		width: 200px;
+  		max-height: 200px;
+  	}
+  	#plus details p
+  	{
+  		font-size: 35px;
+  	}
+
+}
+/*iPad*/
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+  	h1
+  	{
+  		font-size: 55px;
+  	}
+  	p
+  	{
+  		font-size: 30px;
+  	}
+  	#image
+  	{
+  		height: 300px;
+  		width: 300px;
+  		padding-top: 200px;
+  	}
+  	#image img
+  	{
+  		height: 300px;
+  		width: 300px;
+  	}
+  	summary:after
+  	{
+  		font-size: 25px;
+  		background-position: 15px 5px;
+  	}
+  	details[open] summary:after
+  	{
+  		background-position: 15px 5px;
+  	}
+  	#plus details p
+  	{
+  		font-size: 20px;
+  	}
+
+}
+
+
+
+
