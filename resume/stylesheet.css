@@ -120,3 +120,14 @@ body {
 	float: left;
 	width: 50%;
 }
+#references {
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+	overflow: hidden;
+	border-bottom: 1px #E2E2E2 solid
+}
+#references .item {
+	margin: 0 0 10px 0;
+	float: left;
+	width: 50%;
+}
